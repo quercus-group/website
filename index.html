@@ -10,13 +10,13 @@
 </head>
 <body>
     <header>
-        <h1 class="logo"><a href="index.html"><img src="img\QuercusGroup-Logo.svg" alt="Quercus Group Logo"></a></h1>
+        <h1 class="logo"><a href="index.html" class="js-scroll"><img src="img\QuercusGroup-Logo.svg" alt="Quercus Group Logo"></a></h1>
         <nav>
             <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#company">Company</a></li>
-                <li><a href="#contact" class="cta contact-cta">Contact Us</a></li>
+                <li><a href="#projects" class="js-scroll ">Projects</a></li>
+                <li><a href="#services" class="js-scroll ">Services</a></li>
+                <li><a href="#company" class="js-scroll ">Company</a></li>
+                <li><a href="#contact" class="cta contact-cta js-scroll">Contact Us</a></li>
             </ul>
         </nav>
         <button class="toggle-menu-button"><img src="img/menu.svg" alt="button to toggle the menu"></button>
@@ -44,11 +44,11 @@
             </div>
         </div>
         <button class="button next-button">
-            <a href="#projects"><img src="img\arrow-down.svg" alt="Button with two downward-facing arrows to get to the next section"></a>
+            <a href="#projects" class="js-scroll"><img src="img\arrow-down.svg" alt="Button with two downward-facing arrows to get to the next section"></a>
         </button>
     </section>
 
-    <section class="section section-1">
+    <section class="section section-1" id="projects">
         <div class="container inner-container type-2">
             <h2 class="section-name" id="projects">Projects</h2>
             <h3 class="">elit eget gravida cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus</h3>
@@ -79,7 +79,7 @@
                     </div>
                 </div>
                 <picture>
-                    <img src="img/project-img/AccessCites-opt.jpg" alt="">
+                    <img src="img/project-img/AccessCites-opt.jpg" alt="" loading="lazy">
                 </picture>
             </div>
             <div class="project">
@@ -91,7 +91,7 @@
                     </div>
                 </div>
                 <picture>
-                    <img src="img/project-img/InceptionReview-opt.jpg" alt="">
+                    <img src="img/project-img/InceptionReview-opt.jpg" alt="" loading="lazy">
                 </picture>
             </div>
             <div class="project">
@@ -103,7 +103,7 @@
                     </div>
                 </div>
                 <picture>
-                    <img src="img/project-img/BGGS-opt.jpg" alt="">
+                    <img src="img/project-img/BGGS-opt.jpg" alt="" loading="lazy">
                 </picture>
             </div>
             <div class="project">
@@ -115,7 +115,7 @@
                     </div>
                 </div>
                 <picture>
-                    <img src="img/project-img/KNGH-opt.jpg" alt="">
+                    <img src="img/project-img/KNGH-opt.jpg" alt="" loading="lazy">
                 </picture>
             </div>
             <div class="project">
@@ -127,7 +127,7 @@
                     </div>
                 </div>
                 <picture>
-                    <img src="img/project-img/AquaCulture-Scotland-opt.jpg" alt="">
+                    <img src="img/project-img/AquaCulture-Scotland-opt.jpg" alt="" loading="lazy">
                 </picture>
             </div>
             <div class="project">
@@ -139,7 +139,7 @@
                     </div>
                 </div>
                 <picture>
-                    <img src="img/project-img/OilPalm-opt.jpg" alt="">
+                    <img src="img/project-img/OilPalm-opt.jpg" alt="" loading="lazy">
                 </picture>
             </div>
             <div class="project">
@@ -151,7 +151,7 @@
                     </div>
                 </div>
                 <picture>
-                    <img src="img/project-img/WaterGujarat-opt.jpg" alt="">
+                    <img src="img/project-img/WaterGujarat-opt.jpg" alt="" loading="lazy">
                 </picture>
             </div>
             <div class="project">
@@ -163,7 +163,7 @@
                     </div>
                 </div>
                 <picture>
-                    <img src="img/project-img/NordicMasterClass-opt.jpg" alt="">
+                    <img src="img/project-img/NordicMasterClass-opt.jpg" alt="" loading="lazy">
                 </picture>
             </div>
             
@@ -171,22 +171,28 @@
         <div class="container outer-container slider-container partners">
             <h2>Partners</h2>
             <div class="slider-track logo-container">
-                <a href="https://um.dk/en/" class="partner-logo"><img src="https://stateofgreen.com/en/uploads/2018/05/Ministry-foreign-affairs.png"/></a>
-                <a href="https://www.danskindustri.dk/" class="partner-logo"><img src="https://stateofgreen.com/en/uploads/2018/05/DI.png"/></a>
-                <a href="https://oxfamibis.dk/" class="partner-logo"><img src="https://oxfamibis.dk/sites/default/files/oxfam_ibis_logo.png"/></a>
-                <a href="https://www.climate-kic.org/" class="partner-logo"><img src="https://plaza.climate-kic.org/SITE/PRIVATE/IMAGES/logo_CKIC_EU.png"/></a>
-                <a href="https://en.rodekors.dk/" class="partner-logo"><img src="https://cache.nichehuset.dk/annoncer/jobannoncer/images/annoncoerer/logoer/622/3782.png"/></a>
+                <a href="https://um.dk/en/" class="partner-logo"><img src="https://stateofgreen.com/en/uploads/2018/05/Ministry-foreign-affairs.png"/ alt="Ministry of Foreign Affairs Denmark" loading="lazy"></a>
+                <a href="https://www.danskindustri.dk/" class="partner-logo"><img src="https://stateofgreen.com/en/uploads/2018/05/DI.png"alt="Confederation of Danish Industry" loading="lazy"/></a>
+                <a href="https://oxfamibis.dk/" class="partner-logo"><img src="https://oxfamibis.dk/sites/default/files/oxfam_ibis_logo.png" alt=Oxfam Ibis" loading="lazy"/></a>
+                <a href="https://www.climate-kic.org/" class="partner-logo"><img src="https://plaza.climate-kic.org/SITE/PRIVATE/IMAGES/logo_CKIC_EU.png" alt="Climate-KIC" loading="lazy"/></a>
+                <a href="https://en.rodekors.dk/" class="partner-logo"><img src="https://cache.nichehuset.dk/annoncer/jobannoncer/images/annoncoerer/logoer/622/3782.png" alt="Danish Red Cross" loading="lazy"/></a>
+                <a href="https://www.nordicinnovation.org/" class="partner-logo"><img src="https://www.nordicinnovation.org/themes/custom/ni/logo.svg"alt="Nordic Innovation" alt="Nordic Innovation" loading="lazy"/></a>
+                <a href="https://www.temasek.com.sg/en/index" class="partner-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/4/43/TemasekHoldings_logo.svg" alt="Temasek" loading="lazy"/></a>
+                <a href="https://kenyacic.org/" class="partner-logo"><img src="https://www.sustainableenergy.dk/wp-content/uploads/2017/11/kcic-logo-300x300.png" alt="Kenya Climate Innovation Center" loading="lazy"/></a>
+                <a href="https://danishbusinessauthority.dk/" class="partner-logo"><img src="https://danishbusinessauthority.dk/sites/all/themes/subsite/img/logo-erst.png" alt="Danish Business Authority" loading="lazy"/></a>
+                <a href="https://www.cleancluster.dk/" class="partner-logo"><img src="https://www.cleancluster.dk/wp-content/themes/x-child/images/logo.png" alt="Clean Cluster" loading="lazy"/></a>
+                <a href="https://planbornefonden.dk/" class="partner-logo"><img src="https://planbornefonden.dk/wp-content/uploads/2018/06/logo.png" alt="Plan Børnefonden" loading="lazy"/></a>
+                <a href="https://ramboll.com/" class="partner-logo"><img src="https://ramboll.com/-/media/images/rambolllogos/ramboll_logo_websites.png" alt="Ramboll" loading="lazy"/></a>
+                <a href="http://www.industrialization.go.ke/" class="partner-logo"><img src="http://www.industrialization.go.ke/images/ministry-industry-kenya-logo-13March.png" alt="Ministry of Industry, Trade and Cooperatives" loading="lazy"/></a>
+                <a href="https://www.ntu.edu.sg/Pages/home.aspx" class="partner-logo"><img src="https://www3.ntu.edu.sg/cits2/maintenance/img/logo/hires_logo_bw_school.jpg" alt="Nanjang Technical University Singapore" loading="lazy"/></a>
+                <a href="https://www.kk.dk/" class="partner-logo"><img src="https://www.kk.dk/sites/default/files/multisite_logopakke_v_blaa.png" alt="City of Copenhagen" loading="lazy"/></a>
             </div>
-        </div>
-        <!-- <button class="button next-button">
-            <a href="#services"><img src="img\arrow-down.svg" alt="Button with two downward-facing arrows to get to the next section"></a>
-        </button> -->
     </section>
 
-    <section class="section section-2">
+    <section class="section section-2" id="services">
         <div class="container inner-container type-1">
             <h3 class="col-3">elit eget gravida cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus</h3>
-            <h2 class="section-name" id="services">Services</h2>
+            <h2 class="section-name">Services</h2>
             <div class="twocol-text">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -206,21 +212,21 @@
         </div>
         <div class="container outer-container service-line">
             <div class="service-item">
-                <img src="img/service-icons/search.svg">
+                <img src="img/service-icons/search.svg" loading="lazy">
                 <h4>Understand & Situate</h4>
                 <p>Challenge Definition. Ecosystem/Stakeholder Mapping & Analysis. Market Analysis. 
                     Feasibility Studies. Policy Analysis. Sensemaking. Action Research. SWOT. 
                     Organizational Diagnosis. System Mapping. Baseline Study. Context Analysis.</p>
             </div>
             <div class="service-item">
-                <img src="img/service-icons/compass.svg">
+                <img src="img/service-icons/compass.svg" loading="lazy">
                 <h4>Plan & Strategize</h4>
                 <p>Project Scoping. Process Strategy & Design. Strategic Intention. Strategy Development. 
                     Theory of Change. Sustainable and Inclusive Business Model. 
                     Partnership & Engagement Plan. Fundraising & Financing Models.</p>
             </div>
             <div class="service-item">
-                <img src="img/service-icons/user-plus.svg">
+                <img src="img/service-icons/user-plus.svg" loading="lazy">
                 <h4>Mobilize & Orchestrate</h4>
                 <p>Building Coalitions. Cluster Development. Creative Facilitation & Moderation. International Partnerships. 
                     Creative Workshops. Stakeholder & Citizen Engagement. (On-the-ground) Project Management.
@@ -228,19 +234,19 @@
                     ​</p>
             </div>
             <div class="service-item">
-                <img src="img/service-icons/rocket.svg">
+                <img src="img/service-icons/rocket.svg" loading="lazy">
                 <h4>Accelerate & Generate</h4>
                 <p>Co-Creation. Open Innovation. Innovation Procurement. Living Labs. Accelerators. Innovation Labs. Hackathons.
                      Alternative Financing. Innovation Brokerage. Organizational Change. 
                      Value Chain Development. Export Promotion.Technology Diffusion. .</p>
             </div>
             <div class="service-item">
-                <img src="img/service-icons/bulb.svg">
+                <img src="img/service-icons/bulb.svg" loading="lazy">
                 <h4>Learn & Evaluate</h4>
                 <p>Capacity Building. Innovation Learning. Monitoring & Evaluation.</p>
             </div>
             <div class="service-item">
-                <img src="img/service-icons/lock.svg">
+                <img src="img/service-icons/lock.svg" loading="lazy">
                 <h4>Services we can't tell you about</h4>
                 <p>We need you kill to you if you find out our secret capabilities.</p>
             </div>
@@ -251,9 +257,9 @@
         </button> -->
     </section>
 
-    <section class="section section-3">
+    <section class="section section-3" id="company">
         <div class="container inner-container type-2">
-            <h2 class="section-name" id="company">Company</h2>
+            <h2 class="section-name">Company</h2>
             <h3 class="">elit eget gravida cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus</h3>
             <div class="onecol-text">
                 <p>
@@ -274,10 +280,10 @@
         </div>
     </section>
 
-    <section class="section section-4">
+    <section class="section section-4" id="contact">
         <div class="container inner-container type-1">
             <h3 class="col-3">elit eget gravida cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus</h3>
-            <h2 class="section-name" id="contact">Contact</h2>
+            <h2 class="section-name">Contact</h2>
             <div class="twocol-text">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -304,15 +310,15 @@
                             <p>CEO & Founder</p>
                         </div>
                         <div class="team-contact">
-                            <p><img src="img/email.svg">nicolai@quercus-group.com</p>
-                            <p><img src="img/phone.svg"> +45 2949 4561</p>
-                            <a href="https://www.linkedin.com/in/nicolaisederbergrottboll/" rel="nofollow"><img src="img\linkedin-brand-white.svg" alt="Linkedin profile of Nicolai Sederberg Rottbøll">Connect with me</a>
-                            <a href="https://twitter.com/NicolaiRottboll" rel="nofollow"><img src="img\twitter-brand-white.svg" alt="Twitter profile of Nicolai Sederberg Rottbøll">Follow me</a>
+                            <p><img src="img/email.svg" loading="lazy">nicolai@quercus-group.com</p>
+                            <p><img src="img/phone.svg" loading="lazy"> +45 2949 4561</p>
+                            <a href="https://www.linkedin.com/in/nicolaisederbergrottboll/" rel="nofollow"><img src="img\linkedin-brand-white.svg" alt="Linkedin profile of Nicolai Sederberg Rottbøll" loading="lazy">Connect with me</a>
+                            <a href="https://twitter.com/NicolaiRottboll" rel="nofollow"><img src="img\twitter-brand-white.svg" alt="Twitter profile of Nicolai Sederberg Rottbøll" loading="lazy">Follow me</a>
                         </div>
                     </div>
                 </div>
                 <picture>
-                    <img src="img/team-img/Nicolai Sederberg Rottbøll.jpg" alt="Nicolai Sederberg Rottbøll is the CEO and founder of Quercus Group">
+                    <img src="img/team-img/Nicolai Sederberg Rottbøll.jpg" alt="Nicolai Sederberg Rottbøll is the CEO and founder of Quercus Group" loading="lazy">
                 </picture>
             </div>
             <div class="team-member">
@@ -323,15 +329,15 @@
                             <p>CFO & Partner</p>
                         </div>
                         <div class="team-contact">
-                            <p><img src="img/email.svg">michael@quercus-group.com</p>
-                            <p><img src="img/phone.svg">+45 2012 9233</p>
-                            <a href="https://www.linkedin.com/in/michael-rottb%C3%B8ll-sederberg-olsen-a0659619/" rel="nofollow"><img src="img\linkedin-brand-white.svg" alt="Linkedin profile of Michael Rottbøll">Connect with me</a>
-                            <a href="https://twitter.com/Microttboll" rel="nofollow"><img src="img\twitter-brand-white.svg" alt="Twitter profile of Michael Rottbøll">Follow me</a>
+                            <p><img src="img/email.svg" loading="lazy">michael@quercus-group.com</p>
+                            <p><img src="img/phone.svg" loading="lazy">+45 2012 9233</p>
+                            <a href="https://www.linkedin.com/in/michael-rottb%C3%B8ll-sederberg-olsen-a0659619/" rel="nofollow"><img src="img\linkedin-brand-white.svg" alt="Linkedin profile of Michael Rottbøll" loading="lazy">Connect with me</a>
+                            <a href="https://twitter.com/Microttboll" rel="nofollow"><img src="img\twitter-brand-white.svg" alt="Twitter profile of Michael Rottbøll" loading="lazy">Follow me</a>
                         </div>
                     </div>
                 </div>
                 <picture>
-                    <img src="img/team-img/Michael Rottbøll.jpg" alt="Michael Rottbøll is partner and CFO at Quercus Group. He works primarily with smart and sustainable agriculture.">
+                    <img src="img/team-img/Michael Rottbøll.jpg" alt="Michael Rottbøll is partner and CFO at Quercus Group. He works primarily with smart and sustainable agriculture." loading="lazy">
                 </picture>
             </div>
             <div class="team-member">
@@ -342,14 +348,14 @@
                             <p>Country Manager</p>
                         </div>
                         <div class="team-contact">
-                            <p><img src="img/email.svg">mariam@quercus-group.com</p>
-                            <p><img src="img/phone.svg">+254 723 341 220</p>
-                            <a href="https://www.linkedin.com/in/mariam-njoroge/" rel="nofollow"><img src="img\linkedin-brand-white.svg" alt="Linkedin profile of Mariam Njoroge">Connect with me</a>
+                            <p><img src="img/email.svg" loading="lazy">mariam@quercus-group.com</p>
+                            <p><img src="img/phone.svg" loading="lazy">+254 723 341 220</p>
+                            <a href="https://www.linkedin.com/in/mariam-njoroge/" rel="nofollow"><img src="img\linkedin-brand-white.svg" alt="Linkedin profile of Mariam Njoroge" loading="lazy">Connect with me</a>
                         </div>
                     </div>
                 </div>
                 <picture>
-                    <img src="img/team-img/Mariam Njrogoe.png" alt="Mariam Njrogoe is the country director Kenya and East Africa at Quercus Group">
+                    <img src="img/team-img/Mariam Njrogoe.png" alt="Mariam Njrogoe is the country director Kenya and East Africa at Quercus Group" loading="lazy">
                 </picture>
             </div>
             <div class="team-member">
@@ -360,15 +366,15 @@
                             <p>Project Manager</p>
                         </div>
                         <div class="team-contact">
-                            <p><img src="img/email.svg">wadim@quercus-group.com</p>
-                            <p><img src="img/phone.svg">+45 9111 4456</p>
-                            <a href="https://www.linkedin.com/in/wbaslow/" rel="nofollow"><img src="img\linkedin-brand-white.svg" alt="Linkedin profile of Wadim Baslow">Connect with me</a>
-                            <a href="https://twitter.com/w_baslow" rel="nofollow"><img src="img\twitter-brand-white.svg" alt="Twitter profile of Wadim Baslow">Follow me</a>
+                            <p><img src="img/email.svg" loading="lazy">wadim@quercus-group.com</p>
+                            <p><img src="img/phone.svg" loading="lazy">+45 9111 4456</p>
+                            <a href="https://www.linkedin.com/in/wbaslow/" rel="nofollow"><img src="img\linkedin-brand-white.svg" alt="Linkedin profile of Wadim Baslow" loading="lazy">Connect with me</a>
+                            <a href="https://twitter.com/w_baslow" rel="nofollow"><img src="img\twitter-brand-white.svg" alt="Twitter profile of Wadim Baslow" loading="lazy">Follow me</a>
                         </div>
                     </div>
                 </div>
                 <picture>
-                    <img src="img/team-img/Wadim Baslow.jpg" alt="Wadim Baslow is project manager at Quercus Group with a focus on sustainable development, collaboration, innovation and cities.">
+                    <img src="img/team-img/Wadim Baslow.jpg" alt="Wadim Baslow is project manager at Quercus Group with a focus on sustainable development, collaboration, innovation and cities." loading="lazy">
                 </picture>
             </div>
             <div class="team-member">
@@ -379,14 +385,14 @@
                             <p>Consultant</p>
                         </div>
                         <div class="team-contact">
-                            <p><img src="img/email.svg">jackline@quercus-group.com</p>
-                            <p><img src="img/phone.svg">+254 728 916 471</p>
-                            <a href="https://www.linkedin.com/in/jackline-o-14679143/" rel="nofollow"><img src="img\linkedin-brand-white.svg" alt="Linkedin profile of Jackline Ogolla">Connect with me</a>
+                            <p><img src="img/email.svg" loading="lazy">jackline@quercus-group.com</p>
+                            <p><img src="img/phone.svg" loading="lazy">+254 728 916 471</p>
+                            <a href="https://www.linkedin.com/in/jackline-o-14679143/" rel="nofollow"><img src="img\linkedin-brand-white.svg" alt="Linkedin profile of Jackline Ogolla" loading="lazy">Connect with me</a>
                         </div>
                     </div>
                 </div>
                 <picture>
-                    <img src="img/team-img/Jackline Ogolla.jpg" alt="Jackline Ogolla is a consultant at Quercus Group with a focus on researcha and smart and sustainable agriculture">
+                    <img src="img/team-img/Jackline Ogolla.jpg" alt="Jackline Ogolla is a consultant at Quercus Group with a focus on researcha and smart and sustainable agriculture" loading="lazy">
                 </picture>
             </div>
             <div class="team-member">
@@ -398,15 +404,15 @@
                                 <p>Managing Director Asia Pacific</p>
                             </div>
                             <div class="team-contact">
-                                <p><img src="img/email.svg">allan@quercus-group.com</p>
-                                <p><img src="img/phone.svg">+65 8102 6722</p>
-                                <a href="https://www.linkedin.com/in/allan-teo/" rel="nofollow"><img src="img\linkedin-brand-white.svg" alt="Linkedin profile of Allan Han-Huei Te">Connect with me</a>
+                                <p><img src="img/email.svg" loading="lazy">allan@quercus-group.com</p>
+                                <p><img src="img/phone.svg" loading="lazy">+65 8102 6722</p>
+                                <a href="https://www.linkedin.com/in/allan-teo/" rel="nofollow"><img src="img\linkedin-brand-white.svg" alt="Linkedin profile of Allan Han-Huei Te" loading="lazy">Connect with me</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <picture>
-                    <img src="img/team-img/Allan Teo.jpg" alt="Allan Han-Huei Teo is managing director of Quercus Group in Singapore and South-East Asia. ">
+                    <img src="img/team-img/Allan Teo.jpg" alt="Allan Han-Huei Teo is managing director of Quercus Group in Singapore and South-East Asia. " loading="lazy">
                 </picture>
             </div>
             <div class="team-member">
@@ -417,15 +423,14 @@
                             <p>Senior Consultant</p>
                         </div>
                         <div class="team-contact">
-                            <p><img src="img/email.svg">maja@quercus-group.com</p>
-                            <p><img src="img/phone.svg">+45 2363 2198</p>
-                            <a href="https://www.linkedin.com/in/maja-m%C3%B8llnitz-lange-06884b4/" rel="nofollow"><img src="img\linkedin-brand-white.svg" alt="Linkedin profile of Maja Lang Møllnit">Connect with me</a>
-                            <!-- <a href="https://twitter.com/w_baslow" rel="nofollow"><img src="img\twitter-brand-white.svg" alt="Twitter profile of Maja Lang Møllnitz">Follow me</a> -->
+                            <p><img src="img/email.svg" loading="lazy">maja@quercus-group.com</p>
+                            <p><img src="img/phone.svg" loading="lazy">+45 2363 2198</p>
+                            <a href="https://www.linkedin.com/in/maja-m%C3%B8llnitz-lange-06884b4/" rel="nofollow"><img src="img\linkedin-brand-white.svg" alt="Linkedin profile of Maja Lang Møllnit" loading="lazy">Connect with me</a>
                         </div>
                     </div>
                 </div>
                 <picture>
-                    <img src="img/team-img/Maja Lange Møllnitz.jpg" alt="Maja Møllnitz Lange is a senior consultant at Quercus Group with a focus on global city networks and public administration">
+                    <img src="img/team-img/Maja Lange Møllnitz.jpg" alt="Maja Møllnitz Lange is a senior consultant at Quercus Group with a focus on global city networks and public administration" loading="lazy">
                 </picture>
             </div>
             <div class="team-member">
@@ -436,13 +441,13 @@
                             <p>Associate Partner</p>
                         </div>
                         <div class="team-contact">
-                            <p><img src="img/email.svg">benny@quercus-group.com</p>
-                            <p><img src="img/phone.svg">+45 9177 9800</p>
+                            <p><img src="img/email.svg" loading="lazy">benny@quercus-group.com</p>
+                            <p><img src="img/phone.svg" loading="lazy">+45 9177 9800</p>
                     </div>
                     </div>
                 </div>
                 <picture>
-                    <img src="img/team-img/Benny Mistry.jpg" alt="Benny Mistry is an associate partner at Quercus Group supporting projects within smart and sustainable agriculture.">
+                    <img src="img/team-img/Benny Mistry.jpg" alt="Benny Mistry is an associate partner at Quercus Group supporting projects within smart and sustainable agriculture." loading="lazy">
                 </picture>
             </div>
             <div class="team-member">
@@ -453,13 +458,13 @@
                             <p>Associate Partner</p>
                         </div>
                         <div class="team-contact">
-                            <p><img src="img/email.svg">flemming@quercus-group.com</p>
-                            <p><img src="img/phone.svg">+45 2612 2630</p>
+                            <p><img src="img/email.svg" loading="lazy">flemming@quercus-group.com</p>
+                            <p><img src="img/phone.svg" loading="lazy">+45 2612 2630</p>
                     </div>
                     </div>
                 </div>
                 <picture>
-                    <img src="img/team-img/Flemming Madsen.jpg" alt="Flemming Madsen is an associate partner at Quercus Group with a focus on livable labs.">
+                    <img src="img/team-img/Flemming Madsen.jpg" alt="Flemming Madsen is an associate partner at Quercus Group with a focus on livable labs." loading="lazy">
                 </picture>
             </div>
             
@@ -524,5 +529,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js" integrity="sha512-2LEOQqARBlk67mYfoWcJah3Rt1Tan5TYsWUNBPtviIk206eyqQpUSpuBK5S77UFu3Pm+zlJOdw8uP5UfO/AtPw==" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

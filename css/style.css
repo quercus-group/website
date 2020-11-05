@@ -121,6 +121,7 @@ header {
 
 header nav {
   position: relative;
+  transition: opacity 1s ease;
 }
 header nav a {
   font-size: 1.125rem;
@@ -157,13 +158,24 @@ header nav li {
 .toggle-menu-button {
   position: absolute;
   top: 50%;
-  right: 2rem;
+  right: 4rem;
   transform: translateY(-50%);
   border: none;
   background: none;
-  visibility: hidden;
+  /* visibility: hidden; */
+  opacity: 0;
   cursor: pointer;
   pointer-events: none;
+  transition: all 1s ease;
+}
+
+header nav.scrolled {
+  opacity: 0;
+}
+
+.toggle-menu-button.scrolled {
+  opacity: 1;
+  pointer-events: initial;
 }
 
 /* Hero Section */
@@ -232,11 +244,14 @@ header nav li {
 .blue {
   background-color: rgba(72, 89, 135, 0.9);
 }
-
+.slider-container {
+  overflow: hidden;
+}
 .logo-container {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 300%;
+  overflow: hidden;
 }
 
 .partner-logo {
@@ -245,14 +260,37 @@ header nav li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .partner-logo img {
   filter: grayscale(100%);
   opacity: 0.6;
+  width: fit-content;
+  transform: scale(0.8);
+  transition: filter 0.1s ease;
+}
+.partner-logo img:hover {
+  filter: grayscale(0%);
 }
 
-/* Service Section */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-63%);
+  }
+}
+
+.slider-track {
+  animation: slideLeft 40s linear infinite;
+}
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+/* /* Service Section */
 
 .service-line {
   width: 100%;
