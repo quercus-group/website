@@ -14,6 +14,10 @@ body {
   color: #2c2d48;
 }
 
+body.hide {
+  overflow: hidden;
+}
+
 .outer-container {
   max-width: 90em;
   padding: 2rem 2rem;
@@ -162,20 +166,64 @@ header nav li {
   transform: translateY(-50%);
   border: none;
   background: none;
+  pointer-events: none;
   /* visibility: hidden; */
   opacity: 0;
   cursor: pointer;
-  pointer-events: none;
-  transition: all 1s ease;
 }
 
 header nav.scrolled {
   opacity: 0;
+  pointer-events: none;
 }
 
 .toggle-menu-button.scrolled {
   opacity: 1;
-  pointer-events: initial;
+  pointer-events: auto;
+}
+
+.toggle-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #485987;
+  color: #fffefe;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5rem;
+  clip-path: circle(1% at 100% -10%);
+  -webkit-clip-path: circle(1% at 100% -10%);
+}
+.toggle-menu-button img {
+  pointer-events: none;
+}
+
+.close-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.close-menu img {
+  pointer-events: none;
+}
+
+.toggle-menu nav a {
+  color: #fffefe;
+  font-size: 5vh;
+  margin-bottom: 1rem;
+}
+.toggle-menu nav {
+  text-align: right;
+}
+.toggle-menu .contact-cta {
+  color: #d4a418;
 }
 
 /* Hero Section */
@@ -195,18 +243,42 @@ header nav.scrolled {
   padding: 1rem;
 }
 
+.typer-text {
+  color: #d4a418;
+}
+
 /* Project Section */
 
 .project,
 .team-member {
   position: relative;
   cursor: pointer;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(212, 219, 218, 1);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(212, 219, 218, 1);
+  box-shadow: 0px 0px 5px 1px rgba(212, 219, 218, 1);
+  border-radius: 5px;
+}
+
+.project,
+.team-member {
+  overflow: hidden;
+}
+
+.project img,
+.team-member img {
+  transition: transform 0.75s ease;
 }
 
 .project:hover .overlay,
 .team-member:hover .overlay {
   opacity: 1;
 }
+
+.project:hover img,
+.team-member:hover img {
+  transform: scale(1.1);
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -216,7 +288,8 @@ header nav.scrolled {
   color: #fffefe;
   opacity: 0;
   padding: 2rem;
-  transition: opacity 0.5s ease, background-color 0.5s ease;
+  z-index: 1;
+  transition: all 0.5s ease;
 }
 
 .overlay h4 {
@@ -272,22 +345,6 @@ header nav.scrolled {
 }
 .partner-logo img:hover {
   filter: grayscale(0%);
-}
-
-@keyframes slideLeft {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-63%);
-  }
-}
-
-.slider-track {
-  animation: slideLeft 40s linear infinite;
-}
-.slider-track:hover {
-  animation-play-state: paused;
 }
 
 /* /* Service Section */
