@@ -6,12 +6,23 @@
   --bronze: #a77464;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: #fffefe;
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #2c2d48;
+}
+
+body,
+html {
+  position: relative;
+  overflow: hidden;
 }
 
 body.hide {
@@ -117,7 +128,7 @@ header {
   justify-content: space-between;
   width: 100%;
   padding: 1rem 2rem;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 1;
@@ -173,6 +184,7 @@ header nav li {
 }
 
 header nav.scrolled {
+  display: none;
   opacity: 0;
   pointer-events: none;
 }
@@ -515,8 +527,8 @@ address {
     pointer-events: none;
   }
   .toggle-menu-button {
-    visibility: visible;
-    pointer-events: initial;
+    opacity: 1;
+    pointer-events: auto;
   }
   .footer-detail {
     flex-direction: column;
