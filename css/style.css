@@ -354,6 +354,7 @@ header nav.scrolled {
   width: fit-content;
   transform: scale(0.8);
   transition: filter 0.1s ease;
+  object-fit: cover;
 }
 .partner-logo img:hover {
   filter: grayscale(0%);
@@ -582,6 +583,27 @@ address {
   }
   .twocol-text {
     grid-column-start: 1;
+  }
+
+  .locations {
+    flex-wrap: wrap;
+  }
+  /* .location {
+    width: 100%;
+  } */
+  .location address {
+    display: none;
+  }
+  footer h4 {
+    font-size: 1.5rem;
+    margin: 2rem 0rem 1rem 0rem;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-bottom div {
+    text-align: center;
   }
 }
 
