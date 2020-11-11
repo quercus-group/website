@@ -409,6 +409,7 @@ header nav.scrolled {
 .team-contact a {
   color: #fffefe;
   opacity: 0.9;
+  width: fit-content;
 }
 .team-contact img {
   margin-right: 0.5rem;
