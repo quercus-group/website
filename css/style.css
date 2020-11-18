@@ -441,6 +441,7 @@ header nav.scrolled {
   justify-content: space-between;
   height: 100%;
 }
+
 .team-contact {
   display: flex;
   flex-direction: column;
