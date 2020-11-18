@@ -541,6 +541,22 @@ address {
   height: 40vh;
 }
 
+@media (pointer: coarse) {
+  .overlay {
+    opacity: 1;
+  }
+  .bronze {
+    background-color: rgba(167, 116, 100, 0.6);
+  }
+  .lemon {
+    background-color: rgba(212, 164, 24, 0.6);
+  }
+
+  .blue {
+    background-color: rgba(72, 89, 135, 0.6);
+  }
+}
+
 @media all and (max-width: 78rem) {
   .overlay {
     padding: 1.5rem;
