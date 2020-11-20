@@ -628,6 +628,15 @@ address {
     grid-template-rows: repeat(3, auto);
     -webkit-grid-template-rows: repeat(3, auto);
   }
+  .full-team-member {
+    grid-template-columns: 1fr;
+    column-gap: 0rem;
+    max-width: 75%;
+  }
+
+  .team-member-details {
+    padding: 2rem 2rem;
+  }
 }
 
 @media all and (max-width: 64em) {
@@ -753,7 +762,8 @@ address {
     opacity: 1;
     pointer-events: auto;
   }
-  .inner-container {
+  .inner-container,
+  .full-team-member {
     max-width: 34rem;
   }
 
@@ -849,7 +859,8 @@ address {
     font-size: 1rem;
   }
 
-  .inner-container {
+  .inner-container,
+  .full-team-member {
     padding: 1rem 1rem;
   }
   .outer-container {
