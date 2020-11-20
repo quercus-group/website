@@ -458,7 +458,8 @@ header nav.scrolled {
   opacity: 0.9;
   width: fit-content;
 }
-.team-contact img {
+.team-contact img,
+.team-member-details img {
   margin-right: 0.5rem;
   object-fit: cover;
 }
@@ -529,6 +530,59 @@ address {
 
 /* other pages */
 
+.other-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-team-member {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+}
+.full-team-member .type-2 {
+  row-gap: 1rem;
+}
+.full-team-member img {
+  object-fit: cover;
+}
+
+.full-team-member h2 {
+  font-family: "Lato", sans-serif;
+  color: #2c2d48;
+  font-weight: 900;
+  font-size: 2.618rem;
+  line-height: 1.3;
+}
+.team-member-details {
+  padding: 2rem 0rem;
+}
+.phone-email {
+  margin-bottom: 1rem;
+}
+
+.career-history p,
+.phone-email p {
+  margin: 0;
+}
+
+.career-history span,
+.contact-information p {
+  font-weight: 700;
+}
+.contact-information p,
+.contact a {
+  margin-bottom: 0;
+}
+.contact-information a {
+  display: block;
+}
+.contact-information {
+  margin-top: 2rem;
+}
 .nothinghere {
   min-height: 100vh;
   min-width: 100vw;

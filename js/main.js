@@ -8,7 +8,7 @@ const introText = document.querySelector('.intro')
 const scrollLinks = document.querySelectorAll('.js-scroll')
 const nextButton = document.querySelector('.next-button')
 const sliderTrack = document.querySelector('.slider-track')
-const animatedWords = ['across disciplines.', 'across geograpies.', 'across differences & divides.', 'across sectors.']
+const animatedWords = ['across disciplines.', 'across geographies.', 'across differences & divides.', 'across sectors.']
 const overlays = document.querySelectorAll('.overlay')
 
 
@@ -21,7 +21,7 @@ toggleMenuLinks.forEach(link => {
 })
 overlays.forEach(overlay => {
   overlay.addEventListener('click', ()=>{
-    const overlayURL = overlay.querySelector('.other-page')
+    const overlayURL = overlay.querySelector('.other-page-link')
     window.location = overlayURL.getAttribute('href')
   })
 })
