@@ -8,7 +8,7 @@ const introText = document.querySelector('.intro')
 const scrollLinks = document.querySelectorAll('.js-scroll')
 const nextButton = document.querySelector('.next-button')
 const sliderTrack = document.querySelector('.slider-track')
-const animatedWords = ['across disciplines.', 'across geographies.', 'across differences & divides.', 'across sectors.']
+const animatedWords = ['across disciplines.', 'across geographies.', 'across differences.', 'across sectors.']
 const overlays = document.querySelectorAll('.overlay')
 
 

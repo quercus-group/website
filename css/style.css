@@ -540,7 +540,7 @@ address {
   align-items: center;
 }
 
-.other-page .twocol-text {
+.other-page-project .twocol-text {
   grid-column-start: 1;
   -webkit-column-start: 1;
 }
