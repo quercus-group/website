@@ -61,6 +61,10 @@ a {
   color: #2c2d48;
 }
 
+strong {
+  font-weight: 700;
+}
+
 .cta {
   color: var(--lemon);
 }
@@ -583,6 +587,11 @@ address {
   height: 100%;
   padding: 2rem;
   background-color: #fffefe;
+}
+
+.other-page-projects a {
+  color: var(--lemon);
+  font-weight: 700;
 }
 
 .full-team-member {
