@@ -658,6 +658,10 @@ address {
   height: 40vh;
 }
 
+.other-page iframe {
+  padding: 1rem;
+}
+
 @media (pointer: coarse) {
   .overlay {
     opacity: 1;
