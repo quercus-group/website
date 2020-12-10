@@ -61,7 +61,9 @@ a {
   color: #2c2d48;
 }
 
-strong {
+strong,
+.privacy-policy h4,
+.privacy-policy h5 {
   font-weight: 700;
 }
 
@@ -643,6 +645,11 @@ address {
 .other-page-projects {
   justify-content: flex-start;
   margin: 5% 0;
+}
+
+.privacy-policy a {
+  font-weight: 700;
+  color: var(--lemon);
 }
 
 .survey {
