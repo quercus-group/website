@@ -652,7 +652,7 @@ address {
   -moz-box-shadow: 0px 0px 5px 1px rgba(212, 219, 218, 1);
   box-shadow: 0px 0px 5px 1px rgba(212, 219, 218, 1);
   padding: 2rem;
-  margin: 1rem;
+  margin: 15vh 1rem 1rem 1rem;
 }
 
 .survey h3 {
