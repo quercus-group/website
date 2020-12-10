@@ -802,6 +802,10 @@ address {
   .project-card {
     padding: 1rem;
   }
+
+  .survey {
+    margin-top: 1rem;
+  }
 }
 
 @media all and (max-width: 54em) {
